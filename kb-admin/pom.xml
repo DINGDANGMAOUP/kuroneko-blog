@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.dingdangmaoup</groupId>
+    <artifactId>kuroneko-blog-dependencies</artifactId>
+    <version>${revision}</version>
+  </parent>
+  <artifactId>kb-admin</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+    <module>start</module>
+    <module>kb-admin-domain</module>
+    <module>kb-admin-infrastructure</module>
+    <module>kb-admin-app</module>
+    <module>kb-admin-adapter</module>
+    <module>kb-admin-client</module>
+  </modules>
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.dingdangmaoup</groupId>
+        <artifactId>kb-admin-domain</artifactId>
+        <version>${revision}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.dingdangmaoup</groupId>
+        <artifactId>kb-admin-client</artifactId>
+        <version>${revision}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.dingdangmaoup</groupId>
+        <artifactId>kb-admin-infrastructure</artifactId>
+        <version>${revision}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.dingdangmaoup</groupId>
+        <artifactId>kb-admin-app</artifactId>
+        <version>${revision}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.dingdangmaoup</groupId>
+        <artifactId>kb-admin-adapter</artifactId>
+        <version>${revision}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+</project>

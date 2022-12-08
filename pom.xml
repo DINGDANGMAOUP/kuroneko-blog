@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.dingdangmaoup</groupId>
+  <artifactId>kuroneko-blog-dependencies</artifactId>
+  <version>${revision}</version>
+  <name>kuroneko-blog-dependencies</name>
+  <description>kuroneko-blog-dependencies</description>
+  <modules>
+    <module>kb-admin</module>
+  </modules>
+  <packaging>pom</packaging>
+  <properties>
+    <revision>1.0.0-SNAPSHOT</revision>
+    <java.version>17</java.version>
+    <spring-boot.version>3.0.0</spring-boot.version>
+    <cola.components.version>4.3.1</cola.components.version>
+    <lombok.version>1.18.24</lombok.version>
+    <arthas.version>3.6.7</arthas.version>
+    <mybatis-plus.version>3.5.1</mybatis-plus.version>
+    <mybatis.verion>3.0.0</mybatis.verion>
+    <dynamic-datasource.version>3.6.0</dynamic-datasource.version>
+    <sharding-sphere.version>5.2.1</sharding-sphere.version>
+    <postgresql.version>42.2.25</postgresql.version>
+    <build.plugins.plugin.version>3.8.1</build.plugins.plugin.version>
+    <native-maven-plugin.version>0.9.18</native-maven-plugin.version>
+  </properties>
+  <dependencies>
+  </dependencies>
+  <dependencyManagement>
+    <dependencies>
+      <!--   spring boot    -->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>${spring-boot.version}</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba.cola</groupId>
+        <artifactId>cola-components-bom</artifactId>
+        <version>${cola.components.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <!--      spring boot End-->
+      <!--COLA Components-->
+      <!--      <dependency>-->
+      <!--        <groupId>com.alibaba.cola</groupId>-->
+      <!--        <artifactId>cola-component-domain-starter</artifactId>-->
+      <!--        <version>${cola.components.version}</version>-->
+      <!--      </dependency>-->
+      <!--      <dependency>-->
+      <!--        <groupId>com.alibaba.cola</groupId>-->
+      <!--        <artifactId>cola-component-exception</artifactId>-->
+      <!--        <version>${cola.components.version}</version>-->
+      <!--      </dependency>-->
+      <!--      <dependency>-->
+      <!--        <groupId>com.alibaba.cola</groupId>-->
+      <!--        <artifactId>cola-component-dto</artifactId>-->
+      <!--        <version>${cola.components.version}</version>-->
+      <!--      </dependency>-->
+      <!--      <dependency>-->
+      <!--        <groupId>com.alibaba.cola</groupId>-->
+      <!--        <artifactId>cola-component-catchlog-starter</artifactId>-->
+      <!--        <version>${cola.components.version}</version>-->
+      <!--      </dependency>-->
+      <!--COLA Components End-->
+      <!--  lombok    -->
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${lombok.version}</version>
+      </dependency>
+      <!--  lombok  End  -->
+      <!--    arthas  -->
+      <dependency>
+        <groupId>com.taobao.arthas</groupId>
+        <artifactId>arthas-spring-boot-starter</artifactId>
+        <version>${arthas.version}</version>
+      </dependency>
+      <!--    arthas End  -->
+      <!--   mybatis plus   -->
+      <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-boot-starter</artifactId>
+        <version>${mybatis-plus.version}</version>
+      </dependency>
+      <!--   mybatis plus  End -->
+      <!--      mybatis-->
+      <dependency>
+        <groupId>org.mybatis.spring.boot</groupId>
+        <artifactId>mybatis-spring-boot-starter</artifactId>
+        <version>${mybatis.verion}</version>
+      </dependency>
+      <!--    mybatis End  -->
+      <!--  dynamic-datasource    -->
+      <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+        <version>${dynamic-datasource.version}</version>
+      </dependency>
+      <!--  dynamic-datasource  End  -->
+      <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>${postgresql.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>${build.plugins.plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.graalvm.buildtools</groupId>
+          <artifactId>native-maven-plugin</artifactId>
+          <version>${native-maven-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>${spring-boot.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>

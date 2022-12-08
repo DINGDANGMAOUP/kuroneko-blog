@@ -1,0 +1,28 @@
+server:
+  port: 6001
+spring:
+  application:
+    name: kb-admin
+  datasource:
+    dynamic:
+      primary: master
+      strict: true
+      datasource:
+        master:
+          url: jdbc:postgresql://10.10.201.24:7001/kb_db
+          username: kuroneko
+          password: kuroneko
+        slave:
+          url: jdbc:postgresql://10.10.201.24:7002/kb_db
+          username: kuroneko
+          password: kuroneko
+logging:
+  level:
+    com.baomidou: debug
+    org.apache.shardingsphere: debug
+    com.alibaba.cola.catchlog: debug
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.dingdangmaoup.kb.admin.domain.*
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
