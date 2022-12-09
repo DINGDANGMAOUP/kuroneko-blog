@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dingdangmaoup.kb.admin.infrastructure.mapper.KbTenantMapper">
+
+    <resultMap id="BaseResultMap" type="com.dingdangmaoup.kb.admin.domain.model.domain.KbTenant">
+            <result property="tenant_id" column="tenant_id" jdbcType="VARCHAR"/>
+            <result property="revision" column="revision" jdbcType="VARCHAR"/>
+            <result property="created_by" column="created_by" jdbcType="VARCHAR"/>
+            <result property="created_time" column="created_time" jdbcType="TIMESTAMP"/>
+            <result property="updated_by" column="updated_by" jdbcType="VARCHAR"/>
+            <result property="updated_time" column="updated_time" jdbcType="TIMESTAMP"/>
+            <result property="deleted" column="deleted" jdbcType="VARCHAR"/>
+            <result property="tenant_name" column="tenant_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        tenant_id,revision,created_by,
+        created_time,updated_by,updated_time,
+        deleted,tenant_name
+    </sql>
+</mapper>

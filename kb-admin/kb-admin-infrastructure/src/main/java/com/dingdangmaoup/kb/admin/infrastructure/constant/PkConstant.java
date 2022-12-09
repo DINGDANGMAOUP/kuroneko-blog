@@ -5,4 +5,5 @@ package com.dingdangmaoup.kb.admin.infrastructure.constant;
  */
 public interface PkConstant {
     String MODEL = "com.dingdangmaoup.kb.admin.domain.model";
+    String MAPPER="com.dingdangmaoup.kb.admin.infrastructure.mapper";
 }
