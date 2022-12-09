@@ -1,5 +1,6 @@
 package com.dingdangmaoup.kb.admin.infrastructure.service.impl;
 
+import com.alibaba.cola.catchlog.CatchAndLog;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dingdangmaoup.kb.admin.domain.model.domain.KbUser;
 import com.dingdangmaoup.kb.admin.infrastructure.service.KbUserService;

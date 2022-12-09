@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author dzhao1
  * @date 2022/12/05
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.dingdangmaoup.kb.admin", "com.alibaba.cola"})
 public class AdminApplication {
 
   public static void main(String[] args) {

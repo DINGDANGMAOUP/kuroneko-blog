@@ -1,5 +1,7 @@
 package com.dingdangmaoup.kb.admin.domain.gateway;
 
+import com.alibaba.cola.catchlog.CatchAndLog;
+
 /**
  * 用户网关
  *
