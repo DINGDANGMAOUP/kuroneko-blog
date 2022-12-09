@@ -19,7 +19,6 @@ public class TestController {
   }
   @PostMapping
   public MultiResponse<String> test1() {
-    User user = DomainFactory.create(User.class);
     return MultiResponse.of(List.of("test"));
   }
 }

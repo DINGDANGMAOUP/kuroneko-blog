@@ -19,7 +19,7 @@
     <cola.components.version>4.3.1</cola.components.version>
     <lombok.version>1.18.24</lombok.version>
     <arthas.version>3.6.7</arthas.version>
-    <mybatis-plus.version>3.5.1</mybatis-plus.version>
+    <mybatis-plus.version>3.5.2</mybatis-plus.version>
     <mybatis.verion>3.0.0</mybatis.verion>
     <dynamic-datasource.version>3.6.0</dynamic-datasource.version>
     <sharding-sphere.version>5.2.1</sharding-sphere.version>
