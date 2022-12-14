@@ -26,3 +26,5 @@ mybatis-plus:
   type-aliases-package: com.dingdangmaoup.kb.admin.domain.*
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    banner: false
