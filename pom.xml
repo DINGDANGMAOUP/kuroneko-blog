@@ -16,10 +16,12 @@
     <revision>1.0.0-SNAPSHOT</revision>
     <java.version>17</java.version>
     <spring-boot.version>3.0.0</spring-boot.version>
+    <spring-cloud.version>2021.0.3</spring-cloud.version>
+    <spring-cloud-tencent.versison>1.8.2-2022.0.0-RC2</spring-cloud-tencent.versison>
     <cola.components.version>4.3.1</cola.components.version>
     <lombok.version>1.18.24</lombok.version>
     <arthas.version>3.6.7</arthas.version>
-    <mybatis-plus.version>3.5.2</mybatis-plus.version>
+    <mybatis-plus.version>3.5.2.7-SNAPSHOT</mybatis-plus.version>
     <mybatis.verion>3.0.0</mybatis.verion>
     <dynamic-datasource.version>3.6.0</dynamic-datasource.version>
     <sharding-sphere.version>5.2.1</sharding-sphere.version>
@@ -39,6 +41,24 @@
         <scope>import</scope>
         <type>pom</type>
       </dependency>
+      <!--      spring boot End-->
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring-cloud.version}</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+      <!--      spring cloud tencent-->
+      <dependency>
+        <groupId>com.tencent.cloud</groupId>
+        <artifactId>spring-cloud-tencent-dependencies</artifactId>
+        <version>${spring-cloud-tencent.versison}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <!--      spring cloud tencent End-->
+      <!--COLA Components-->
       <dependency>
         <groupId>com.alibaba.cola</groupId>
         <artifactId>cola-components-bom</artifactId>
@@ -46,28 +66,6 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      <!--      spring boot End-->
-      <!--COLA Components-->
-      <!--      <dependency>-->
-      <!--        <groupId>com.alibaba.cola</groupId>-->
-      <!--        <artifactId>cola-component-domain-starter</artifactId>-->
-      <!--        <version>${cola.components.version}</version>-->
-      <!--      </dependency>-->
-      <!--      <dependency>-->
-      <!--        <groupId>com.alibaba.cola</groupId>-->
-      <!--        <artifactId>cola-component-exception</artifactId>-->
-      <!--        <version>${cola.components.version}</version>-->
-      <!--      </dependency>-->
-      <!--      <dependency>-->
-      <!--        <groupId>com.alibaba.cola</groupId>-->
-      <!--        <artifactId>cola-component-dto</artifactId>-->
-      <!--        <version>${cola.components.version}</version>-->
-      <!--      </dependency>-->
-      <!--      <dependency>-->
-      <!--        <groupId>com.alibaba.cola</groupId>-->
-      <!--        <artifactId>cola-component-catchlog-starter</artifactId>-->
-      <!--        <version>${cola.components.version}</version>-->
-      <!--      </dependency>-->
       <!--COLA Components End-->
       <!--  lombok    -->
       <dependency>
@@ -111,6 +109,12 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+<repositories>
+  <repository>
+    <id>snapshots</id>
+    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+</repository>
+</repositories>
   <build>
     <pluginManagement>
       <plugins>

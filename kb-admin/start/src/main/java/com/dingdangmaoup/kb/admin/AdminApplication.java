@@ -2,6 +2,7 @@ package com.dingdangmaoup.kb.admin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * 管理应用程序
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author dzhao1
  * @date 2022/12/05
  */
+@EnableDiscoveryClient
 @SpringBootApplication(scanBasePackages = {"com.dingdangmaoup.kb.admin", "com.alibaba.cola"})
 public class AdminApplication {
 

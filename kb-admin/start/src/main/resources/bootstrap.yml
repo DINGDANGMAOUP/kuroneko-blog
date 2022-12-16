@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: kb-admin
+  cloud:
+    polaris:
+      address: grpc://10.10.201.24:8004
+      namespace: default
