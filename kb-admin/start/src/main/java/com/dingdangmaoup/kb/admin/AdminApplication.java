@@ -1,5 +1,6 @@
 package com.dingdangmaoup.kb.admin;
 
+import com.dingdangmaoup.kb.admin.infrastructure.constant.PkConstant;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -11,7 +12,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @date 2022/12/05
  */
 @EnableDiscoveryClient
-@SpringBootApplication(scanBasePackages = {"com.dingdangmaoup.kb.admin", "com.alibaba.cola"})
+@SpringBootApplication(scanBasePackages = {PkConstant.BASE, PkConstant.COLA})
 public class AdminApplication {
 
   public static void main(String[] args) {
