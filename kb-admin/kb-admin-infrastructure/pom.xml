@@ -23,7 +23,6 @@
     <dependency>
       <groupId>com.dingdangmaoup</groupId>
       <artifactId>kb-admin-client</artifactId>
-
     </dependency>
     <dependency>
       <groupId>com.baomidou</groupId>

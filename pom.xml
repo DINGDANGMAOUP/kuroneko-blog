@@ -21,13 +21,13 @@
     <cola.components.version>4.3.1</cola.components.version>
     <lombok.version>1.18.24</lombok.version>
     <arthas.version>3.6.7</arthas.version>
-    <mybatis-plus.version>3.5.2.7-SNAPSHOT</mybatis-plus.version>
-    <mybatis.verion>3.0.0</mybatis.verion>
+    <mybatis-plus.version>3.5.3</mybatis-plus.version>
     <dynamic-datasource.version>3.6.0</dynamic-datasource.version>
     <sharding-sphere.version>5.2.1</sharding-sphere.version>
     <postgresql.version>42.2.25</postgresql.version>
     <build.plugins.plugin.version>3.8.1</build.plugins.plugin.version>
     <native-maven-plugin.version>0.9.18</native-maven-plugin.version>
+    <spring-javaformat.version>0.0.6</spring-javaformat.version>
   </properties>
   <dependencies>
   </dependencies>
@@ -88,13 +88,6 @@
         <version>${mybatis-plus.version}</version>
       </dependency>
       <!--   mybatis plus  End -->
-      <!--      mybatis-->
-      <dependency>
-        <groupId>org.mybatis.spring.boot</groupId>
-        <artifactId>mybatis-spring-boot-starter</artifactId>
-        <version>${mybatis.verion}</version>
-      </dependency>
-      <!--    mybatis End  -->
       <!--  dynamic-datasource    -->
       <dependency>
         <groupId>com.baomidou</groupId>

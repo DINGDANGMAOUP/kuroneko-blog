@@ -9,19 +9,19 @@ import net.sf.jsqlparser.expression.LongValue;
  */
 public class TenantLineHandlerImpl implements TenantLineHandler {
 
+	@Override
+	public Expression getTenantId() {
+		return new LongValue(1);
+	}
 
-  @Override
-  public Expression getTenantId() {
-    return new LongValue(1);
-  }
+	@Override
+	public String getTenantIdColumn() {
+		return TenantLineHandler.super.getTenantIdColumn();
+	}
 
-  @Override
-  public String getTenantIdColumn() {
-    return TenantLineHandler.super.getTenantIdColumn();
-  }
+	@Override
+	public boolean ignoreTable(String tableName) {
+		return !"user".equalsIgnoreCase(tableName);
+	}
 
-  @Override
-  public boolean ignoreTable(String tableName) {
-    return !"user".equalsIgnoreCase(tableName);
-  }
 }

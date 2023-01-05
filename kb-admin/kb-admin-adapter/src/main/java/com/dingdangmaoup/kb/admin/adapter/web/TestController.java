@@ -13,12 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/test")
 public class TestController {
 
-  @GetMapping
-  public SingleResponse<String> test() {
-    return SingleResponse.of("test");
-  }
-  @PostMapping
-  public MultiResponse<String> test1() {
-    return MultiResponse.of(List.of("test"));
-  }
+	@GetMapping
+	public SingleResponse<String> test() {
+		return SingleResponse.of("test");
+	}
+
+	@PostMapping
+	public MultiResponse<String> test1() {
+		return MultiResponse.of(List.of("test"));
+	}
+
 }

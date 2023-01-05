@@ -12,11 +12,11 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @date 2022/12/05
  */
 @EnableDiscoveryClient
-@SpringBootApplication(scanBasePackages = {PkConstant.BASE, PkConstant.COLA})
+@SpringBootApplication(scanBasePackages = { PkConstant.BASE, PkConstant.COLA })
 public class AdminApplication {
 
-  public static void main(String[] args) {
-    SpringApplication.run(AdminApplication.class, args);
-  }
+	public static void main(String[] args) {
+		SpringApplication.run(AdminApplication.class, args);
+	}
 
 }
