@@ -23,7 +23,7 @@
     <mybatis.verion>3.0.0</mybatis.verion>
     <dynamic-datasource.version>3.6.0</dynamic-datasource.version>
     <sharding-sphere.version>5.2.1</sharding-sphere.version>
-    <postgresql.version>42.3.8</postgresql.version>
+    <postgresql.version>42.7.2</postgresql.version>
     <build.plugins.plugin.version>3.8.1</build.plugins.plugin.version>
     <native-maven-plugin.version>0.9.18</native-maven-plugin.version>
   </properties>
